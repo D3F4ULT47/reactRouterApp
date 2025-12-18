@@ -5,6 +5,8 @@ import './App.css'
 import { Route,Routes } from 'react-router-dom'
 import Home from './pages/home'
 import About from './pages/about'
+import Vans from './pages/vans'
+import VanDetail from './pages/vanDetail'
 
 
 function App() {
@@ -15,9 +17,20 @@ function App() {
       path='/'
       element={<Home/>}
       />
+
       <Route
       path='/about'
       element={<About/>}
+      />
+
+      <Route
+      path='/vans'
+      element={<Vans/>}
+      />
+      
+      <Route
+        path="/vans/:id"
+         element={<VanDetail />} 
       />
     </Routes>
     </>
