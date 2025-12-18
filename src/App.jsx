@@ -7,11 +7,14 @@ import Home from './pages/home'
 import About from './pages/about'
 import Vans from './pages/vans'
 import VanDetail from './pages/vanDetail'
+import Header from "./components/header"
+
 
 
 function App() {
   return (
     <>
+    <Header/>
     <Routes>
       <Route
       path='/'
@@ -27,10 +30,10 @@ function App() {
       path='/vans'
       element={<Vans/>}
       />
-      
+
       <Route
         path="/vans/:id"
-         element={<VanDetail />} 
+         element={<VanDetail/>} 
       />
     </Routes>
     </>

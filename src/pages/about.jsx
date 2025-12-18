@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router'
 import bgImg from "../assets/images/about-hero.png"
-import Header from '../components/header'
+
 
 function about() {
   return (
     <>
-    <Header/>
+ 
     <div className="about-page-container">
     <img src={bgImg} className="about-hero-image" />
     <div className="about-page-content">
